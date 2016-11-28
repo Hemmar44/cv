@@ -61,7 +61,9 @@ li h3 {
 li h4 {
 	margin:0;
 }
-
+ul > li > ul > li > ul {
+	display:none;
+}
 ul > li > ul > li > ul > li{
 	font-size:0.9em;
 }
