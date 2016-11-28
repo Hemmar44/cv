@@ -5,10 +5,10 @@ body {
 }
 
 main {
-	width:60%;
+	width:70%;
 	margin: 30px auto 0 auto;
-	min-height:600px;
 	background-color:#fff;
+	box-shadow: 1px 1px 0.1px gray, -1px -1px .1px gray;
 }
 
 main:after {
@@ -24,21 +24,44 @@ section {
 
 main section:first-child {
 	width:30%;
-	min-height:600px;
-	box-shadow: 1px 1px 0.1px gray, -1px -1px .1px gray;
+	background-color:#899299;
+	color:white;
+	
+}
+
+figure {
+	min-height:200px;
+	width:95%;
+	margin:10px auto 10px auto;
+}
+
+img {
+	max-width:100%;
+	height:auto;
+}
+
+p {
+	width:95%;
+	margin:0 auto 5px auto;
+	padding:5px;
+}
+
+p span {
+	font-size:0.9em;
 }
 
 main section:last-child {
 	width:70%;
-	min-height:600px;
-	box-shadow: 1px 1px 0.1px gray, 0 -1px .1px gray;
 }
+
+
 
 main section:last-child > h1 {
 	margin-top:0;
 	padding:10px;
 	text-align:center;
 	font-size:2em;
+	
 }
 
 /* Styling list */
@@ -49,6 +72,10 @@ ul {
 }
 
 ul > li {
+	margin:5px 0 0 0 ;
+}
+
+ul > li > ul {
 	margin:0;
 }
 
@@ -56,16 +83,27 @@ li h3 {
 	margin:0;
 	color:#6B46CF;
 	font-size:1.4em;
+	border-bottom:.6px solid black;
+	width:98%;
 }
 
 li h4 {
 	margin:0;
 }
+
+
+ul > li > ul > li {
+	padding:0.15em;
+	margin:5px 0 0 0;
+}
+
 ul > li > ul > li > ul {
 	display:none;
 }
 ul > li > ul > li > ul > li{
 	font-size:0.9em;
+	padding:0.2em;
+	margin:5px 0 0 0;
 }
 
 .knowledge {
