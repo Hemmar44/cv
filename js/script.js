@@ -11,14 +11,16 @@ $(function(){
 	//oneMouseover();
 	
 	function oneMouseover() {
-	$("body").one("mouseover",function(){
+	$("body, section, .knowledge").one("mouseover",function(){
 	secPicHeight = $("main").find("section").first().height();
 	secNameHeight = $("main").find("section").last().height();
 	if(secPicHeight>=secNameHeight) {
 		$("main").css("background-color","white");
+		console.log("trigger");
 	}
 	else if(secPicHeight<secNameHeight){
 		$("main").css("background-color","#899299");
+		console.log("trigger2");
 	}
 	});
 	}
