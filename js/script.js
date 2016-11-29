@@ -5,19 +5,23 @@ $(function(){
 
 	$(".knowledge").on("click", function(){
 		$(this).parent("li").find("ul").slideToggle();
-		
+		oneMouseover();
 	});
 	
-	$("body").mouseover(function(){
+	oneMouseover();
+	
+	function oneMouseover() {
+	$("body").one("mouseover",function(){
+	secPicHeight = $("main").find("section").first().height();
+	secNameHeight = $("main").find("section").last().height();
 	if(secPicHeight>=secNameHeight) {
 		$("main").css("background-color","white");
-		console.log("pic" + secPicHeight);
-		console.log("name" + secNameHeight);
+		console.log('trigered')
 	}
 	else if(secPicHeight<secNameHeight){
-		$("main").css("background-color","gray");
-		console.log("triggered2");
+		$("main").css("background-color","#899299");
+		console.log("trigered2");
 	}
 	});
-
+	}
 });
