@@ -1,14 +1,23 @@
 $(function(){
-	var secNameHeight = 0;
-	var secPicHeight = 0;
+	
+	var secPicHeight = $("main").find("section").first().height();
+	var secNameHeight = $("main").find("section").last().height();
+
 	$(".knowledge").on("click", function(){
-		//alert("cv");
 		$(this).parent("li").find("ul").slideToggle();
+		
 	});
 	
-	//if(secPicHeight>=secNameHeight) {
-	//		$("main").css("background-color","white");
-	//	}
-	
+	$("body").mouseover(function(){
+	if(secPicHeight>=secNameHeight) {
+		$("main").css("background-color","white");
+		console.log("pic" + secPicHeight);
+		console.log("name" + secNameHeight);
+	}
+	else if(secPicHeight<secNameHeight){
+		$("main").css("background-color","gray");
+		console.log("triggered2");
+	}
+	});
 
 });
