@@ -5,10 +5,12 @@ $(function(){
 
 	$(".knowledge").on("click", function(){
 		$(this).parent("li").find("ul").slideToggle();
+		$(this).find("span").toggleClass("hide");
 		oneMouseover();
 	});
 	
 	//oneMouseover();
+	
 	
 	function oneMouseover() {
 	$("body, section, .knowledge").one("mouseover",function(){
