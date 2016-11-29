@@ -8,7 +8,7 @@ $(function(){
 		oneMouseover();
 	});
 	
-	oneMouseover();
+	//oneMouseover();
 	
 	function oneMouseover() {
 	$("body").one("mouseover",function(){
@@ -16,11 +16,9 @@ $(function(){
 	secNameHeight = $("main").find("section").last().height();
 	if(secPicHeight>=secNameHeight) {
 		$("main").css("background-color","white");
-		console.log('trigered')
 	}
 	else if(secPicHeight<secNameHeight){
 		$("main").css("background-color","#899299");
-		console.log("trigered2");
 	}
 	});
 	}

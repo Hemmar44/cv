@@ -109,7 +109,17 @@ ul > li > ul > li > ul > li{
 	margin:5px 0 0 0;
 }
 
+ul > li > ul > li > ul > li:before {
+	content:"→";
+	margin-right:4px;
+	margin-left:-5px;
+}
+
 .knowledge {
 	cursor:pointer;
+}
+
+.fonts {
+	font-size:1.2em;
 }
 
