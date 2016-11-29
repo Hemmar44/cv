@@ -2,30 +2,21 @@ $(function(){
 	
 	var secPicHeight = $("main").find("section").first().height();
 	var secNameHeight = $("main").find("section").last().height();
-	
-	//var animate = doSomething();
-	
-	
-	//var timer = setInterval(doSomething, 2000)
-	//oneMouseover();
-	//doSomething();
-	//console.log(timer);
+
+	var timer = setTimeout(startAnim, 1000);
 	
 	$(".knowledge").on("click", function(){
 		$(this).parent("li").find("ul").slideToggle();
 		$(this).find("span").toggleClass("hide");
 		oneMouseover();
-		//clearInterval(timer);
-	
 	});
 	
+
 	
 	function oneMouseover() {
 		$("body").one("mouseover",function(){
 			secPicHeight = $("main").find("section").first().height();
 			secNameHeight = $("main").find("section").last().height();
-			//$(".fonts").removeClass("red");
-			//timer = setTimeout(empty,0);
 			console.log("trig")
 			if(secPicHeight>=secNameHeight) {
 			$("main").css("background-color","white");
@@ -34,29 +25,32 @@ $(function(){
 			$("main").css("background-color","#899299");
 			}
 		});
-	}
+		}
 	
-		function doSomething() {
-		$(".icon-lightbulb")
-						.animate({"font-size":"120%"}, 1000)
-						.animate({"font-size":"100%"}, 1000);
+		function doSomething(loc) {
+		$(loc)
+				.animate({"font-size":"110%"}, 500)
+				.animate({"font-size":"100%"}, 500);
 									
-	}
+		}
 	
-	var timeout = null;
+		function enlarge() {
+			$(".knowledge").each(function(i){
+			var t = $(this);
+			setTimeout(function(){ doSomething(t); }, (i+1) * 200);
+			});
+		}
+		
+		function startAnim() {
+		var timeout = null;
 
-		$(document).on('mousemove', function() {
+			$(document).on('mousemove', function() {
     
-		clearInterval(timeout);
+			clearInterval(timeout);
 	
-		timeout = setInterval(doSomething , 3000);
-});
-	//$(".icon-lightbulb").each(function setAnim(){
-    //$(this)
-          //  .animate({"font-size":"120%"}, 1000).
-           // .animate({"font-size":"100%"}, 1000)
-           // ,setAnim);
-	
+			timeout = setInterval(enlarge , 3000);
+		});
+		}
 	
 	
 });
