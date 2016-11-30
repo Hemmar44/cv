@@ -24,27 +24,28 @@ $(function(){
 		$("main").css({"width":"100%", "margin-top": "0"});
 		$(".bg").css("background-color", "white");
 		$("p").css({"color": "black", "margin-left":"5px"});
-		$(".demo-icon , strong").css("color", "#516CCC");
-		$("h4 > span").hide();
+		$("span > .demo-icon , strong").css("color", "#516CCC");
+		//$("h4 > span").hide();
 		$("ul > li > ul > li > ul").show();
 		$("#back").hide();
 		timer1 = setTimeout(function() {
 		$("#back").show();
-		}, 10000);
+		}, 1000);
 		var self = $(this);
 		self.hide();
 		timer2 = setTimeout(function() {
 		$(self).show();
-		}, 10000);
+		}, 1000);
 	})
 	
 	$("#back").on("click", function() {
 		$("main").css({"width":"90%", "margin-top": "10px"});
 		$(".bg").css("background-color", "#899299");
 		$("p").css({"color": "white"});
-		$(".demo-icon , strong").css("color", "white");
-		("h4 > span").each(function(){$(this).first().show()});
-		$("ul > li > ul > li > ul").hide();
+		$("span > .demo-icon , strong").css("color", "white");
+		("h4 > span:first-child").show();
+		//$("ul > li > ul > li > ul").hide
+		$("ul.jak").hide();
 		$(this).hide();
 		$("#print").show();
 		clearTimeout(timer1);
