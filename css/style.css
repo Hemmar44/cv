@@ -1,7 +1,9 @@
 body {
 	margin:0;
 	font-family: 'Open Sans', sans-serif;
-	background-color:#E5E6ED
+	font-size:1em;
+	background-color:#E5E6ED;
+	position:relative;
 }
 
 main {
@@ -156,6 +158,10 @@ footer {
 .red {
 	color:red;
 }
+
+footer>div {
+	display:none;
+}
 /*///////////////////////buttons//////////////////////////////////////////////////////////////////*/
 
 #buttons{
@@ -164,6 +170,86 @@ footer {
 	right:1%;
 }
 
+
 #back {
 	display:none;
+}
+
+/*////////////////////////////media queries/////////////////////////////////////////////////////////*/
+/*first breakpoint*/
+@media screen and (max-width: 830px) {
+
+body {
+	font-size:0.9em;
+
+}
+main {
+	width:100%;
+	margin:0;
+	
+}
+
+#buttons {
+	display:none;
+}
+
+}
+
+@media screen and (max-width: 700px) {
+
+body {
+	font-size:0.7em;
+
+}
+
+@media screen and (max-width: 540px) {
+	
+figure {
+	display:none;
+}
+
+section {
+	float:none;
+	text-align:left;
+}
+
+main section:first-child {
+	width:100%;
+}
+main section:last-child {
+	width:100%;
+}
+
+p {
+	display:none;
+}
+
+aside:after {
+	content:"";
+	display:block;
+	clear:bloth;
+	
+}
+
+main section:last-child > header {
+	margin-bottom:20px;
+}
+
+main section:last-child > header > p {
+	display:block;
+	width:100%;
+	text-align:center;
+}
+
+footer>div {
+	width:33.333333%;
+	float:left;
+	text-align:center;
+	margin-bottom:10px;
+	display:block;
+	color:#516CCC;
+}
+
+
+
 }
