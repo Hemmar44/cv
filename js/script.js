@@ -18,11 +18,6 @@ $(function(){
 		timeout = setInterval(enlarge , 15000);
 	});
 	
-	
-
-	
-	
-	
 	var timer1 = null;
 	var timer2 = null;
 	$("#print").on("click", function(){
@@ -37,6 +32,7 @@ $(function(){
 		$("h4 > span").hide();
 		$("ul > li > ul > li > ul").show();
 		$("#back").hide();
+		$("main section:last-child > header > p").css("color","#899299");
 		timer1 = setTimeout(function() {
 		$("#back").show();
 		}, 15000);
