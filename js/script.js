@@ -35,12 +35,12 @@ $(function(){
 		$("main section:last-child > header > p").css("color","#899299");
 		timer1 = setTimeout(function() {
 		$("#back").show();
-		}, 15000);
+		}, 30000);
 		var self = $(this);
 		self.hide();
 		timer2 = setTimeout(function() {
 		$(self).show();
-		}, 15000);
+		}, 30000);
 		
 	})
 	
