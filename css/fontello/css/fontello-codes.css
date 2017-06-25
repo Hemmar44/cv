@@ -1,15 +1,16 @@
 
-.icon-lightbulb:before { content: '\e800'; } /* '' */
-.icon-briefcase:before { content: '\e801'; } /* '' */
-.icon-mail:before { content: '\e802'; } /* '' */
-.icon-mobile:before { content: '\e803'; } /* '' */
-.icon-github:before { content: '\e804'; } /* '' */
-.icon-home-outline:before { content: '\e805'; } /* '' */
-.icon-adult:before { content: '\e806'; } /* '' */
-.icon-male:before { content: '\e807'; } /* '' */
-.icon-desktop:before { content: '\e808'; } /* '' */
-.icon-target:before { content: '\e809'; } /* '' */
+.icon-thumbs-up:before { content: '\e800'; } /* '' */
+.icon-target:before { content: '\e801'; } /* '' */
+.icon-home-outline:before { content: '\e802'; } /* '' */
+.icon-lightbulb:before { content: '\e803'; } /* '' */
+.icon-male:before { content: '\e804'; } /* '' */
+.icon-adult:before { content: '\e805'; } /* '' */
+.icon-desktop:before { content: '\e806'; } /* '' */
+.icon-mobile:before { content: '\e807'; } /* '' */
+.icon-mail:before { content: '\e808'; } /* '' */
+.icon-briefcase:before { content: '\e809'; } /* '' */
+.icon-github-circled:before { content: '\f09b'; } /* '' */
 .icon-graduation-cap:before { content: '\f19d'; } /* '' */
 .icon-language:before { content: '\f1ab'; } /* '' */
 .icon-soccer-ball:before { content: '\f1e3'; } /* '' */
-.icon-birthday:before { content: '\f1fd'; } /* '' */
+.icon-linkedin:before { content: '\f318'; } /* '' */

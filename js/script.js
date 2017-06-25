@@ -28,7 +28,7 @@ $(function(){
 							  "box-shadow" : "none"});
 		$(".bg").css("background-color", "white");
 		$("p").css({"color": "black", "margin-left":"15px"});
-		$("span > .demo-icon , strong").css("color", "#516CCC");
+		$("span > .demo-icon , strong").css("color", "#899299");
 		$("h4 > span").hide();
 		$("ul > li > ul > li > ul").show();
 		$("#back").hide();
